@@ -337,7 +337,7 @@ st.markdown("""
 <hr class="chat-divider">
 """, unsafe_allow_html=True)
 
-client = Groq(api_key="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")
+client = Groq(api_key="")
 
 try:
     with open("kd_try.txt", "r", encoding="utf-8") as f:
