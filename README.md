@@ -5,38 +5,32 @@
 
 ## 📌 Overview
 
-Selvaflow AI is a modern AI-powered assistant built using:
+Selvaflow AI is a modern AI-powered chatbot built using Python, Streamlit, and Groq API with the LLaMA 3.3 70B model.
 
-- Python
-- Streamlit
-- Groq API
-- LLaMA 3.3 70B Model
+This AI assistant helps users with:
 
-It is designed for:
-
-- Web Development Assistance
-- Software Development Guidance
-- AI Project Help
-- Freelancing Support
+- Coding Help
+- AI Projects
+- Freelancing
 - Business Ideas
-- Beginner-Friendly Coding Help
+- Website Development
+- Software Solutions
 
-The application includes a beautiful modern dark UI, chat interface, custom sidebar, and knowledge-base-powered responses.
+The chatbot uses a local knowledge base file to provide business-oriented and beginner-friendly responses.
 
 ---
 
 ## ✨ Features
 
-- Modern Dark UI Design
-- Responsive Chat Interface
-- Knowledge Base Integration
-- Groq LLaMA 3.3 70B Support
+- Modern Dark UI
+- Streamlit Chat Interface
+- Groq LLaMA 3.3 70B Integration
+- Knowledge Base Support
 - Beginner Friendly Responses
-- Business-Oriented AI Assistant
-- Sidebar Navigation
-- Conversation History
-- Clear Chat Option
 - Step-by-Step Guidance
+- Custom Sidebar Design
+- Clear Conversation Option
+- Responsive Layout
 
 ---
 
@@ -45,8 +39,8 @@ The application includes a beautiful modern dark UI, chat interface, custom side
 - Python
 - Streamlit
 - Groq API
-- HTML/CSS Styling
-- LLaMA 3.3 70B Versatile Model
+- HTML & CSS
+- LLaMA 3.3 70B Model
 
 ---
 
@@ -56,33 +50,22 @@ The application includes a beautiful modern dark UI, chat interface, custom side
 project/
 │
 ├── interface.py
-├── kd_try.txt
-├── requirements.txt
-└── README.md
+└── kd_try.txt
 ```
 
 ---
 
 ## ⚙️ Installation
 
-### 1️⃣ Clone Repository
+### 1️⃣ Install Required Packages
 
 ```bash
-git clone https://github.com/your-username/selvaflow-ai.git
-cd selvaflow-ai
+pip install streamlit groq
 ```
 
 ---
 
-### 2️⃣ Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
----
-
-### 3️⃣ Add Groq API Key
+### 2️⃣ Add Your Groq API Key
 
 Inside `interface.py`
 
@@ -90,13 +73,13 @@ Inside `interface.py`
 client = Groq(api_key="YOUR_API_KEY")
 ```
 
-Get API Key from:
+Get API Key:
 
 https://console.groq.com/keys
 
 ---
 
-### 4️⃣ Run Application
+### 3️⃣ Run the Project
 
 ```bash
 streamlit run interface.py
@@ -106,65 +89,62 @@ streamlit run interface.py
 
 ## 📘 Knowledge Base
 
-The chatbot uses a local knowledge base file:
+The chatbot reads information from:
 
 ```bash
 kd_try.txt
 ```
 
-You can add:
+You can store:
 
 - Services
 - FAQs
 - Business Information
-- Project Details
-- Coding Knowledge
-- Custom Instructions
+- AI Knowledge
+- Coding Information
+- Website Details
+
+The assistant only answers using this knowledge base.
+
+---
+
+## 🤖 AI Model
+
+```bash
+llama-3.3-70b-versatile
+```
+
+Powered by Groq AI.
+
+https://groq.com/
 
 ---
 
 ## 🎨 UI Highlights
 
 - Premium Dark Theme
-- Gradient Effects
 - Modern Chat Bubbles
+- Gradient UI Design
 - Responsive Sidebar
-- Smooth Hover Effects
 - Professional Layout
-
----
-
-## 🤖 AI Model
-
-Model Used:
-
-```bash
-llama-3.3-70b-versatile
-```
-
-Powered by Groq AI
-
-https://groq.com/
+- Smooth Hover Effects
 
 ---
 
 ## 📌 Example Use Cases
 
-- Portfolio Website Guidance
-- Ecommerce Development Help
+- Portfolio Website Help
+- Ecommerce Website Guidance
 - Billing Software Ideas
-- AI Project Assistance
 - Freelancing Support
+- AI Project Assistance
 - Coding Explanations
-- UI/UX Suggestions
 
 ---
 
 ## 🔒 Important Rule
 
-The assistant only answers based on the provided knowledge base.
-
-If information is unavailable, it replies:
+If information is not available in the knowledge base, the assistant replies:
 
 ```bash
 "I only provide answers based on my knowledge base."
@@ -172,36 +152,19 @@ If information is unavailable, it replies:
 
 ---
 
-## 📦 Requirements
-
-Example `requirements.txt`
-
-```txt
-streamlit
-groq
-```
-
----
-
 ## 👨‍💻 Developer
 
-Developed for freelance software and web development services under Selvaflow.
+Developed under Selvaflow for freelance software and web development services.
 
 https://selvaflow.netlify.app/
 
 ---
 
-## ⭐ Support
+# ⭐ Support
 
 If you like this project:
 
 - Star the repository
 - Share with developers
 - Improve the knowledge base
-- Build your own AI assistant
-
----
-
-# 📜 License
-
-This project is open-source and available for educational and freelance development purposes.
+- Build your own AI assistantject is open-source and available for educational and freelance development purposes.
